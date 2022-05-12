@@ -73,6 +73,7 @@ legend {
 #pers label:nth-child(even) {
     --winkel: -2deg;
 }
+
 #pers label:nth-child(odd) {
     --winkel: 2deg;
 }
@@ -81,6 +82,10 @@ legend {
     background-color: lightcyan;
     outline: 2px solid lightskyblue;
     transform: rotate(var(--winkel)) scale(1.05);
+}
+
+#pers label:nth-child(odd) input:focus {
+    transform: rotate(var(--winkel)) scale(1.05) translateY(10px) ;
 }
 
 span {
