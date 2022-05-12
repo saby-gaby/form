@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="#">
+        <fieldset id="pers">
+            <legend>Personal Data</legend>
+            <label for="first">First Name:
+                <input type="text" id="first">
+            </label>
+            <label for="last">Last Name:
+                <input type="text" id="last">
+            </label>
+            <label for="street">Street:
+                <input type="text" id="street">
+            </label>
+            <label for="zipcode">Zipcode:
+                <input type="text" id="zipcode">
+            </label>
+            <label for="phone">Phone:
+                <input type="tel" id="phone">
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email">
+            </label>
+            <label for="comment">Comment:
+                <textarea placeholder="Tell us more about important colors, etc." name="comment" id="comment" ></textarea>
+            </label>
+        </fieldset>
+        <fieldset id="prod">
+            <legend>Products</legend>
+            <label><span>Web Design:</span>
+                <div>
+                    <label for="ind">
+                        <input type="radio" id="ind" name="design" checked value="individual"> Individual
+                    </label>
+                    <label for="temp">
+                        <input type="radio" id="temp" name="design" value="template"> Template
+                    </label>
+                </div>
+            </label>
+            <label><span>Web Development:</span>
+                <label for="html">
+                    <input type="checkbox" id="html" name="HTML & CSS"> HTML &amp; CSS</label>
+                <label for="js">
+                    <input type="checkbox" id="js" name="JavaScript"> JavaScript</label>
+                <label for="mDB">
+                    <input type="checkbox" id="mDB" name="MongoDB"> MongoDB</label>
+            </label>
+            <label for="start"><span>Project Start:</span>
+                <input type="date" id="start" name="Project Start">
+            </label>
+            <label for="end"><span>Project End:</spa>
+                    <input type="date" id="end" name="Project End">
+            </label>
+            <label for="cat"><span>Category:</span>
+                <select name="category" id="cat">
+                    <option value="personal">Personal</option>
+                    <option value="business">Business</option>
+                    <option value="student">Study</option>
+                </select>
+            </label>
+        </fieldset>
+        <button>Order our services</button>
+    </form>
+</body>
+
+</html>
