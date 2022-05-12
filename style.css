@@ -70,7 +70,7 @@ legend {
     resize: none;
 }
 
-#pers label:nth-child(even) {
+#pers label:nth-child(even), #pers textarea {
     --winkel: -2deg;
 }
 
@@ -78,7 +78,7 @@ legend {
     --winkel: 2deg;
 }
 
-#pers input:focus {
+#pers input:focus, #pers textarea:focus {
     background-color: lightcyan;
     outline: 2px solid lightskyblue;
     transform: rotate(var(--winkel)) scale(1.05);
